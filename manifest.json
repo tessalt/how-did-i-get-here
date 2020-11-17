@@ -1,0 +1,20 @@
+{
+    "name": "How did I get here?",
+    "description": "And you may ask yourself, how did I get here?",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+        "default_title": "How did I get here",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "manifest_version": 2
+  }
